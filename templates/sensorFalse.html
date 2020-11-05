@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Car parked Data Live </h1>
+    <br>
+    <br>
+    <h3 class="Car current state:">Current state: parking spot vacant  </h3>
+    <br>
+    <br>
+    <h5 class="Location:">GPS Coordinates: -33.9532603, 18.4701742 </h3>
+    <br>
+    <br>
+    <img src="{{ url_for('video_feed') }}">
+    <br>
+    <br>
+  </div>
+</div>
+
+{%  endblock  %}
